@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "target": "ES6",                             // Use modern JS features (like async/await)
+      "module": "commonjs",                        // CommonJS is standard for Node.js
+      "strict": true,                              // Enable strict type-checking options
+      "esModuleInterop": true,                     // Allow ES module imports
+      "skipLibCheck": true,                        // Skip library type checking for faster compilation
+      "forceConsistentCasingInFileNames": true,    // Ensure consistent casing of filenames
+      "outDir": "./dist",                          // Output directory for compiled JS files
+      "baseUrl": "./src",                          // Base directory for relative imports
+      "paths": {
+        "@utils/*": ["utils/*"], 
+        "@models/*": ["models/*"],  
+        "@controllers/*": ["controllers/*"], 
+        "@routes/*": ["routes/*"],
+        "@services/*": ["services/*"]
+      }
+    },
+    "include": [
+      "src/**/*"                                  // Include all files under the 'src' directory
+    ],
+    "exclude": [
+      "node_modules"                              // Exclude node_modules from compilation
+    ]
+  }
+  

@@ -1,0 +1,184 @@
+_type: export
+__export_format: 4
+__export_date: 2025-01-31T03:08:38.773Z
+__export_source: insomnia.desktop.app:v10.3.0
+resources:
+  - _id: req_048aa0ea4e7b49d6a92df06a00b6e34f
+    parentId: fld_22ed7d7c82c84be6a9c9a88f5ed94631
+    modified: 1738265583385
+    created: 1738265422066
+    url: http://localhost:3000/api/tasks
+    name: getAllTasks
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication: {}
+    metaSortKey: -1738265422066
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_22ed7d7c82c84be6a9c9a88f5ed94631
+    parentId: wrk_4f8a30e97f47433792693d149ab5288b
+    modified: 1738265416491
+    created: 1738265416491
+    name: typescript/task_manager
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1738265416491
+    environmentType: kv
+    _type: request_group
+  - _id: wrk_4f8a30e97f47433792693d149ab5288b
+    parentId: null
+    modified: 1734786392285
+    created: 1648218255070
+    name: MyTestingEndpoints
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_a596dd0af62d4bbfacddf0bffbd35d58
+    parentId: fld_22ed7d7c82c84be6a9c9a88f5ed94631
+    modified: 1738292166041
+    created: 1738291923853
+    url: http://localhost:3000/api/tasks
+    name: createTask
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "title": "Task 4",
+          "description": "Fourth task description",
+        	"status": "pending"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication: {}
+    metaSortKey: -1737826101198
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9fd68c3610dc4afea1d7e4eb01d2effa
+    parentId: fld_22ed7d7c82c84be6a9c9a88f5ed94631
+    modified: 1738292733101
+    created: 1738292312223
+    url: http://localhost:3000/api/tasks/4
+    name: updateTask
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "title": "Task 4",
+          "description": "Fourth task description updated",
+        	"status": "completed"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication: {}
+    metaSortKey: -1737606440764
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_56694fdc179147e6b2878cab9112f6da
+    parentId: fld_22ed7d7c82c84be6a9c9a88f5ed94631
+    modified: 1738292386392
+    created: 1738292363969
+    url: http://localhost:3000/api/tasks/4
+    name: deleteTask
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    authentication: {}
+    metaSortKey: -1737496610547
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_3c446eb7eb49f542adb4c056de2c19704a9510e2
+    parentId: wrk_4f8a30e97f47433792693d149ab5288b
+    modified: 1648218255084
+    created: 1648218255084
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1648218255084
+    _type: environment
+  - _id: jar_3c446eb7eb49f542adb4c056de2c19704a9510e2
+    parentId: wrk_4f8a30e97f47433792693d149ab5288b
+    modified: 1738123965681
+    created: 1648218255087
+    name: Default Jar
+    cookies:
+      - key: JSESSIONID
+        value: DB5406ACF3DE29A61B70066BEDCFB174
+        domain: localhost
+        path: /
+        httpOnly: true
+        hostOnly: true
+        creation: 2025-01-13T15:44:37.382Z
+        lastAccessed: 2025-01-29T04:12:45.681Z
+        id: 89121df0-84da-46bc-b24a-8ef5104c35e1
+    _type: cookie_jar
+  - _id: spc_a8bd00e5b784463ca94cd98c36499aba
+    parentId: wrk_4f8a30e97f47433792693d149ab5288b
+    modified: 1734786392284
+    created: 1648218255080
+    fileName: MyTestingEndpoints
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: uts_677e895577534cc68c8f0dc6d6cbf852
+    parentId: wrk_4f8a30e97f47433792693d149ab5288b
+    modified: 1648218255092
+    created: 1648218255092
+    name: Example Test Suite
+    metaSortKey: -1738292918787
+    _type: unit_test_suite

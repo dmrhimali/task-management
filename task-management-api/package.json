@@ -1,0 +1,27 @@
+{
+  "name": "task-management-api",
+  "version": "1.0.0",
+  "description": "**production-grade TypeScript-based REST API** built using **Node.js** and **Express**(web framework to handle HTTP requests and responses), structured for scalability, maintainability, and best practices. Here's a breakdown of what it does and how it's organized:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "knex": "^3.1.0",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.12.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
